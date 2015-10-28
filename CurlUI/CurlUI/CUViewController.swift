@@ -30,7 +30,6 @@ class CUViewController: NSViewController {
         let url = urlTextField.stringValue
         let method = CURequestMethod(rawValue: methodComboBox.indexOfSelectedItem)!
         let parameters = parametersTableView.getParameters()
-
         CURequest.request(url,
             method: method,
             parameters: parameters,

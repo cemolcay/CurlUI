@@ -70,9 +70,15 @@ class CUParameters {
     }
 }
 
+enum CUParametersTableViewColumn: Int {
+    case Key = 0
+    case Value = 1
+}
+
 class CUParametersTableView: NSTableView, NSTableViewDelegate, NSTableViewDataSource {
 
     private var parameters = CUParameters()
+    private var currentColumn: CUParametersTableViewColumn?
 
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
@@ -114,5 +120,29 @@ class CUParametersTableView: NSTableView, NSTableViewDelegate, NSTableViewDataSo
         }
         parameters.removeAtIndex(selectedRow)
         reloadData()
+    }
+
+    func tableView(tableView: NSTableView, shouldEditTableColumn tableColumn: NSTableColumn?, row: Int) -> Bool {
+        if let column = tableColumn {
+            if let index = tableColumns.indexOf(column) {
+                currentColumn = CUParametersTableViewColumn(rawValue: index)
+            }
+        }
+        return true
+    }
+
+    override func controlTextDidEndEditing(obj: NSNotification) {
+        guard let currentColumn = currentColumn else { return }
+        if let text = selectedCell()?.stringValue {
+            let table = obj.object as! NSTableView
+            let row = table.selectedRow
+            switch currentColumn {
+            case .Key:
+                parameters[row].key = text
+            case .Value:
+                parameters[row].value = text
+                parameters[row].valueString = text
+            }
+        }
     }
 }
