@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B20AE7701BE1441B00F8DBB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20AE76F1BE1441B00F8DBB4 /* AppDelegate.swift */; };
-		B20AE7721BE1441B00F8DBB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20AE7711BE1441B00F8DBB4 /* ViewController.swift */; };
-		B20AE7741BE1441B00F8DBB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20AE7731BE1441B00F8DBB4 /* Assets.xcassets */; };
-		B20AE7771BE1441B00F8DBB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20AE7751BE1441B00F8DBB4 /* Main.storyboard */; };
+		643217CD1BDA6B7057C80496 /* Pods_CurlUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62490F172E894C09A07A07F1 /* Pods_CurlUI.framework */; };
 		B20AE7821BE1441B00F8DBB4 /* CurlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20AE7811BE1441B00F8DBB4 /* CurlUITests.swift */; };
 		B20AE78D1BE1441B00F8DBB4 /* CurlUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20AE78C1BE1441B00F8DBB4 /* CurlUIUITests.swift */; };
+		B20AE7A11BE1459200F8DBB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20AE79C1BE1459200F8DBB4 /* AppDelegate.swift */; };
+		B20AE7A21BE1459200F8DBB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20AE79D1BE1459200F8DBB4 /* Assets.xcassets */; };
+		B20AE7A31BE1459200F8DBB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20AE79E1BE1459200F8DBB4 /* Main.storyboard */; };
+		B20AE7A41BE1459200F8DBB4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B20AE7A01BE1459200F8DBB4 /* Info.plist */; };
+		B20AE7AA1BE1460700F8DBB4 /* CUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20AE7A91BE1460700F8DBB4 /* CUViewController.swift */; };
+		B20AE7B01BE1462900F8DBB4 /* CUOutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20AE7AF1BE1462900F8DBB4 /* CUOutputViewController.swift */; };
+		B20AE7B21BE148F300F8DBB4 /* CUParametersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20AE7B11BE148F300F8DBB4 /* CUParametersTableView.swift */; };
+		B2F6CE711BE167DC000E5BD3 /* CURequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F6CE701BE167DC000E5BD3 /* CURequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,18 +38,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		441E566135B7D1B3A5DB7441 /* Pods-CurlUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurlUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurlUI/Pods-CurlUI.release.xcconfig"; sourceTree = "<group>"; };
+		62490F172E894C09A07A07F1 /* Pods_CurlUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurlUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F35A3432CD8FEDAD8F1916 /* Pods-CurlUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurlUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurlUI/Pods-CurlUI.debug.xcconfig"; sourceTree = "<group>"; };
 		B20AE76C1BE1441B00F8DBB4 /* CurlUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurlUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B20AE76F1BE1441B00F8DBB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B20AE7711BE1441B00F8DBB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B20AE7731BE1441B00F8DBB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B20AE7761BE1441B00F8DBB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B20AE7781BE1441B00F8DBB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B20AE77D1BE1441B00F8DBB4 /* CurlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20AE7811BE1441B00F8DBB4 /* CurlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurlUITests.swift; sourceTree = "<group>"; };
 		B20AE7831BE1441B00F8DBB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B20AE7881BE1441B00F8DBB4 /* CurlUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurlUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20AE78C1BE1441B00F8DBB4 /* CurlUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurlUIUITests.swift; sourceTree = "<group>"; };
 		B20AE78E1BE1441B00F8DBB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20AE79C1BE1459200F8DBB4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B20AE79D1BE1459200F8DBB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B20AE79F1BE1459200F8DBB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B20AE7A01BE1459200F8DBB4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20AE7A91BE1460700F8DBB4 /* CUViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUViewController.swift; sourceTree = "<group>"; };
+		B20AE7AF1BE1462900F8DBB4 /* CUOutputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUOutputViewController.swift; sourceTree = "<group>"; };
+		B20AE7B11BE148F300F8DBB4 /* CUParametersTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUParametersTableView.swift; sourceTree = "<group>"; };
+		B2F6CE701BE167DC000E5BD3 /* CURequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CURequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				643217CD1BDA6B7057C80496 /* Pods_CurlUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E2B0B86FF46605B585E0C15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0F35A3432CD8FEDAD8F1916 /* Pods-CurlUI.debug.xcconfig */,
+				441E566135B7D1B3A5DB7441 /* Pods-CurlUI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7F1C58390546B507C96747ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62490F172E894C09A07A07F1 /* Pods_CurlUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B20AE7631BE1441B00F8DBB4 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +108,8 @@
 				B20AE7801BE1441B00F8DBB4 /* CurlUITests */,
 				B20AE78B1BE1441B00F8DBB4 /* CurlUIUITests */,
 				B20AE76D1BE1441B00F8DBB4 /* Products */,
+				6E2B0B86FF46605B585E0C15 /* Pods */,
+				7F1C58390546B507C96747ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,11 +126,8 @@
 		B20AE76E1BE1441B00F8DBB4 /* CurlUI */ = {
 			isa = PBXGroup;
 			children = (
-				B20AE76F1BE1441B00F8DBB4 /* AppDelegate.swift */,
-				B20AE7711BE1441B00F8DBB4 /* ViewController.swift */,
-				B20AE7731BE1441B00F8DBB4 /* Assets.xcassets */,
-				B20AE7751BE1441B00F8DBB4 /* Main.storyboard */,
-				B20AE7781BE1441B00F8DBB4 /* Info.plist */,
+				B20AE79A1BE1459200F8DBB4 /* CurlUI */,
+				B20AE79B1BE1459200F8DBB4 /* SupportingFiles */,
 			);
 			path = CurlUI;
 			sourceTree = "<group>";
@@ -122,6 +150,28 @@
 			path = CurlUIUITests;
 			sourceTree = "<group>";
 		};
+		B20AE79A1BE1459200F8DBB4 /* CurlUI */ = {
+			isa = PBXGroup;
+			children = (
+				B20AE7A91BE1460700F8DBB4 /* CUViewController.swift */,
+				B20AE7AF1BE1462900F8DBB4 /* CUOutputViewController.swift */,
+				B20AE7B11BE148F300F8DBB4 /* CUParametersTableView.swift */,
+				B2F6CE701BE167DC000E5BD3 /* CURequest.swift */,
+			);
+			path = CurlUI;
+			sourceTree = "<group>";
+		};
+		B20AE79B1BE1459200F8DBB4 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B20AE79C1BE1459200F8DBB4 /* AppDelegate.swift */,
+				B20AE79D1BE1459200F8DBB4 /* Assets.xcassets */,
+				B20AE79E1BE1459200F8DBB4 /* Main.storyboard */,
+				B20AE7A01BE1459200F8DBB4 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B20AE7911BE1441B00F8DBB4 /* Build configuration list for PBXNativeTarget "CurlUI" */;
 			buildPhases = (
+				829B3850ABC8688817C71D01 /* Check Pods Manifest.lock */,
 				B20AE7681BE1441B00F8DBB4 /* Sources */,
 				B20AE7691BE1441B00F8DBB4 /* Frameworks */,
 				B20AE76A1BE1441B00F8DBB4 /* Resources */,
+				C9EB14784399750AA381E5AA /* Embed Pods Frameworks */,
+				4C266A46F46F0D415BBC59A0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,8 +279,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20AE7741BE1441B00F8DBB4 /* Assets.xcassets in Resources */,
-				B20AE7771BE1441B00F8DBB4 /* Main.storyboard in Resources */,
+				B20AE7A21BE1459200F8DBB4 /* Assets.xcassets in Resources */,
+				B20AE7A31BE1459200F8DBB4 /* Main.storyboard in Resources */,
+				B20AE7A41BE1459200F8DBB4 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,13 +301,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C266A46F46F0D415BBC59A0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurlUI/Pods-CurlUI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		829B3850ABC8688817C71D01 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C9EB14784399750AA381E5AA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurlUI/Pods-CurlUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B20AE7681BE1441B00F8DBB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20AE7721BE1441B00F8DBB4 /* ViewController.swift in Sources */,
-				B20AE7701BE1441B00F8DBB4 /* AppDelegate.swift in Sources */,
+				B20AE7AA1BE1460700F8DBB4 /* CUViewController.swift in Sources */,
+				B20AE7B21BE148F300F8DBB4 /* CUParametersTableView.swift in Sources */,
+				B20AE7A11BE1459200F8DBB4 /* AppDelegate.swift in Sources */,
+				B2F6CE711BE167DC000E5BD3 /* CURequest.swift in Sources */,
+				B20AE7B01BE1462900F8DBB4 /* CUOutputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,10 +394,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B20AE7751BE1441B00F8DBB4 /* Main.storyboard */ = {
+		B20AE79E1BE1459200F8DBB4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B20AE7761BE1441B00F8DBB4 /* Base */,
+				B20AE79F1BE1459200F8DBB4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -382,10 +487,11 @@
 		};
 		B20AE7921BE1441B00F8DBB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F35A3432CD8FEDAD8F1916 /* Pods-CurlUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = CurlUI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CurlUI/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.prototapp.CurlUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -394,10 +500,11 @@
 		};
 		B20AE7931BE1441B00F8DBB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 441E566135B7D1B3A5DB7441 /* Pods-CurlUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = CurlUI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CurlUI/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.prototapp.CurlUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -475,6 +582,7 @@
 				B20AE7931BE1441B00F8DBB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B20AE7941BE1441B00F8DBB4 /* Build configuration list for PBXNativeTarget "CurlUITests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +591,7 @@
 				B20AE7961BE1441B00F8DBB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B20AE7971BE1441B00F8DBB4 /* Build configuration list for PBXNativeTarget "CurlUIUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +600,7 @@
 				B20AE7991BE1441B00F8DBB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

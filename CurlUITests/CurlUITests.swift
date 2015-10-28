@@ -32,5 +32,13 @@ class CurlUITests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
+
+    func testParametersTableView() {
+//        let user = CUParameter(key: "username", value: "cem@movielala.org")
+//        let pass = CUParameter(key: "password", value: 4454804)
+//        let params = CUParameters()
+//        params.parameters = [user, pass]
+//        parametersTableView.parameters = params
+//        parametersTableView.reloadData()
+    }
 }
