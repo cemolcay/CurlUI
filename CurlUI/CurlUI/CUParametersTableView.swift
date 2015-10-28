@@ -24,10 +24,14 @@ class CUParameter {
         self.value = value
         self.valueString = "\(value)"
     }
+
+    var isValid: Bool {
+        return key != nil
+    }
 }
 
 class CUParameters {
-    var parameters = [CUParameter]()
+    private var parameters = [CUParameter]()
     var count: Int {
         return parameters.count
     }
@@ -50,7 +54,9 @@ class CUParameters {
         }
         var params = [String: AnyObject]()
         for parameter in parameters {
-            params[parameter.key] = parameter.value
+            if parameter.isValid {
+                params[parameter.key] = parameter.value
+            }
         }
         return params
     }
@@ -66,7 +72,7 @@ class CUParameters {
 
 class CUParametersTableView: NSTableView, NSTableViewDelegate, NSTableViewDataSource {
 
-    var parameters = CUParameters()
+    private var parameters = CUParameters()
 
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
@@ -92,12 +98,21 @@ class CUParametersTableView: NSTableView, NSTableViewDelegate, NSTableViewDataSo
         return tableColumn?.title == "Key" ? parameter.key : parameter.value
     }
 
+    func getParameters() -> [String: AnyObject]? {
+        return parameters.toDictionary()
+    }
+
     func addNewParameter() {
         let parameter = CUParameter()
         parameters.add(parameter)
+        reloadData()
     }
 
     func removeParameter() {
+        if selectedRow == -1 {
+            return
+        }
         parameters.removeAtIndex(selectedRow)
+        reloadData()
     }
 }
