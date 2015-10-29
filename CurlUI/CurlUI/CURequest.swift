@@ -30,7 +30,12 @@ class CURequest {
         method: CURequestMethod,
         parameters: [String: AnyObject]?,
         success: (String) -> Void) {
-        Alamofire.request(method.AlamofireMethod, url, parameters: parameters, encoding: .JSON, headers: nil)
+        Alamofire.request(
+            method.AlamofireMethod,
+            url,
+            parameters: parameters,
+            encoding: .JSON,
+            headers: nil)
         .responseJSON { response in
             switch response.result {
             case .Success(let value):
