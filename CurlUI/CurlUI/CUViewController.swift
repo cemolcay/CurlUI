@@ -9,7 +9,6 @@
 import Cocoa
 import Foundation
 import ProgressKit
-import ProgressKit.Swift
 
 class CUViewController: NSViewController {
     @IBOutlet var urlTextField: NSTextField!
@@ -59,5 +58,6 @@ class CUViewController: NSViewController {
     private func loadingMode(on on: Bool) {
         buttonContainer.hidden = on
         spinner.hidden = !on
+        spinner.startAnimating()
     }
 }
