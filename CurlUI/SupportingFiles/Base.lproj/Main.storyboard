@@ -761,71 +761,117 @@
                                     <animations/>
                                 </tableHeaderView>
                             </scrollView>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fO9-hP-ezs">
-                                <rect key="frame" x="381" y="13" width="85" height="32"/>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zjA-0I-I8v" userLabel="Spinner" customClass="Spinner" customModule="ProgressKit">
+                                <rect key="frame" x="398" y="20" width="50" height="50"/>
+                                <animations/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="starSize">
+                                        <size key="value" width="1" height="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clockwise" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starCount">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="distance">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="deviceWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="foreground">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="deviceWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="displayAfterAnimationEnds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="rqE-qv-8MR" userLabel="ButtonContainer">
+                                <rect key="frame" x="387" y="20" width="73" height="87"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BnV-Jo-5jv" userLabel="Add">
+                                        <rect key="frame" x="-6" y="59" width="85" height="32"/>
+                                        <animations/>
+                                        <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sfS-cM-L6D">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="addButtonPressed:" target="XfG-lQ-9wD" id="Ofi-Me-CIw"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cGj-0V-wW7" userLabel="Remove">
+                                        <rect key="frame" x="-6" y="26" width="85" height="32"/>
+                                        <animations/>
+                                        <buttonCell key="cell" type="push" title="Remove" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SVG-nU-7sz" userLabel="Remove">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="removeButtonPressed:" target="XfG-lQ-9wD" id="CuB-hc-moX"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ahk-iv-EaE" userLabel="Request">
+                                        <rect key="frame" x="-6" y="-7" width="85" height="32"/>
+                                        <animations/>
+                                        <buttonCell key="cell" type="push" title="Request" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CWw-GX-AgT" userLabel="Request">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="requestButtonPressed:" target="XfG-lQ-9wD" id="g6f-Y4-md6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="73" id="zGg-Bd-ZLn"/>
+                                    <constraint firstAttribute="trailing" secondItem="cGj-0V-wW7" secondAttribute="trailing" id="1rQ-Wt-gh1"/>
+                                    <constraint firstItem="BnV-Jo-5jv" firstAttribute="top" secondItem="rqE-qv-8MR" secondAttribute="top" id="ARn-2z-evM"/>
+                                    <constraint firstItem="cGj-0V-wW7" firstAttribute="trailing" secondItem="Ahk-iv-EaE" secondAttribute="trailing" id="O1a-d5-hjO"/>
+                                    <constraint firstItem="Ahk-iv-EaE" firstAttribute="leading" secondItem="cGj-0V-wW7" secondAttribute="leading" id="QJS-Of-ifu"/>
+                                    <constraint firstItem="Ahk-iv-EaE" firstAttribute="top" secondItem="cGj-0V-wW7" secondAttribute="bottom" constant="12" id="TKz-bd-g7u"/>
+                                    <constraint firstItem="BnV-Jo-5jv" firstAttribute="trailing" secondItem="cGj-0V-wW7" secondAttribute="trailing" id="ZOZ-hS-5cI"/>
+                                    <constraint firstAttribute="width" constant="73" id="cOd-aL-YrO"/>
+                                    <constraint firstItem="cGj-0V-wW7" firstAttribute="top" secondItem="BnV-Jo-5jv" secondAttribute="bottom" constant="12" id="fqb-qT-WXg"/>
+                                    <constraint firstItem="cGj-0V-wW7" firstAttribute="leading" secondItem="BnV-Jo-5jv" secondAttribute="leading" id="hAN-l5-yk4"/>
+                                    <constraint firstItem="Ahk-iv-EaE" firstAttribute="leading" secondItem="rqE-qv-8MR" secondAttribute="leading" id="ldR-pf-EOW"/>
+                                    <constraint firstAttribute="height" constant="87" id="oLi-EI-JsZ"/>
                                 </constraints>
                                 <animations/>
-                                <buttonCell key="cell" type="push" title="Request" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YlI-kT-q0c">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="requestButtonPressed:" target="XfG-lQ-9wD" id="fAC-0B-XuR"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="x9C-qG-DB1">
-                                <rect key="frame" x="381" y="46" width="85" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="73" id="knp-lM-QMV"/>
-                                </constraints>
-                                <animations/>
-                                <buttonCell key="cell" type="push" title="Remove" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gwW-UV-OlK">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="removeButtonPressed:" target="XfG-lQ-9wD" id="8oM-GY-gse"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rdr-1x-jjw">
-                                <rect key="frame" x="381" y="79" width="85" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="73" id="X09-tt-RHl"/>
-                                </constraints>
-                                <animations/>
-                                <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PTy-9d-DBy">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="addButtonPressed:" target="XfG-lQ-9wD" id="Fs1-R1-d7M"/>
-                                </connections>
-                            </button>
+                            </customView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="x9C-qG-DB1" secondAttribute="trailing" constant="20" id="3dG-Fv-pDw"/>
-                            <constraint firstAttribute="bottom" secondItem="fO9-hP-ezs" secondAttribute="bottom" constant="20" id="60w-4g-Ic1"/>
-                            <constraint firstItem="fO9-hP-ezs" firstAttribute="top" secondItem="x9C-qG-DB1" secondAttribute="bottom" constant="12" id="ALb-s5-Vgi"/>
+                            <constraint firstAttribute="bottom" secondItem="zjA-0I-I8v" secondAttribute="bottom" constant="20" id="6s6-8a-dHF"/>
+                            <constraint firstAttribute="trailing" secondItem="zjA-0I-I8v" secondAttribute="trailing" constant="32" id="7o5-bA-e51"/>
                             <constraint firstItem="sRV-aM-waP" firstAttribute="leading" secondItem="vRf-n8-bZo" secondAttribute="trailing" constant="8" id="Bxw-PH-8hI"/>
                             <constraint firstItem="hni-A8-Dny" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Dbf-I1-Z5q"/>
                             <constraint firstAttribute="trailing" secondItem="sRV-aM-waP" secondAttribute="trailing" constant="20" id="FfW-nK-frb"/>
+                            <constraint firstAttribute="bottom" secondItem="rqE-qv-8MR" secondAttribute="bottom" constant="20" id="JF6-5O-2Wj"/>
+                            <constraint firstItem="zjA-0I-I8v" firstAttribute="top" secondItem="hni-A8-Dny" secondAttribute="bottom" constant="-50" id="OeK-0Z-glD"/>
                             <constraint firstItem="vRf-n8-bZo" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="TD8-bZ-H7Z"/>
                             <constraint firstItem="sRV-aM-waP" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="22" id="Uf4-aZ-eHb"/>
                             <constraint firstAttribute="trailing" secondItem="hni-A8-Dny" secondAttribute="trailing" constant="101" id="b5T-Hh-7Jk"/>
+                            <constraint firstItem="zjA-0I-I8v" firstAttribute="centerX" secondItem="rqE-qv-8MR" secondAttribute="centerX" id="bON-LN-5hp"/>
                             <constraint firstItem="hni-A8-Dny" firstAttribute="top" secondItem="vRf-n8-bZo" secondAttribute="bottom" constant="8" id="biN-ON-JJ9"/>
-                            <constraint firstAttribute="trailing" secondItem="Rdr-1x-jjw" secondAttribute="trailing" constant="20" id="qYJ-63-7Uh"/>
+                            <constraint firstItem="rqE-qv-8MR" firstAttribute="top" secondItem="hni-A8-Dny" secondAttribute="bottom" constant="-87" id="dPo-5d-RSp"/>
+                            <constraint firstAttribute="trailing" secondItem="rqE-qv-8MR" secondAttribute="trailing" constant="20" id="riA-ro-gJW"/>
                             <constraint firstItem="vRf-n8-bZo" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="u9V-kg-70C"/>
                             <constraint firstAttribute="bottom" secondItem="hni-A8-Dny" secondAttribute="bottom" constant="20" id="v3F-cQ-rZb"/>
-                            <constraint firstAttribute="trailing" secondItem="fO9-hP-ezs" secondAttribute="trailing" constant="20" id="xXA-On-3jy"/>
-                            <constraint firstItem="x9C-qG-DB1" firstAttribute="top" secondItem="Rdr-1x-jjw" secondAttribute="bottom" constant="12" id="xlf-1g-Iyg"/>
                         </constraints>
                         <animations/>
                     </view>
                     <connections>
+                        <outlet property="buttonContainer" destination="rqE-qv-8MR" id="Uqn-CY-vbM"/>
                         <outlet property="methodComboBox" destination="sRV-aM-waP" id="DuN-db-LDZ"/>
                         <outlet property="parametersTableView" destination="Fnn-tf-h2h" id="Y1U-g1-Wmq"/>
+                        <outlet property="spinner" destination="zjA-0I-I8v" id="TcE-Du-3ol"/>
                         <outlet property="urlTextField" destination="vRf-n8-bZo" id="kfq-1i-kWX"/>
                         <segue destination="Je3-Nz-jyK" kind="sheet" identifier="output" id="GHu-D4-zFo"/>
                     </connections>

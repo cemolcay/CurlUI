@@ -7,11 +7,16 @@
 //
 
 import Cocoa
+import Foundation
+import ProgressKit
+import ProgressKit.Swift
 
 class CUViewController: NSViewController {
     @IBOutlet var urlTextField: NSTextField!
     @IBOutlet var methodComboBox: NSComboBox!
     @IBOutlet var parametersTableView: CUParametersTableView!
+    @IBOutlet var buttonContainer: NSView!
+    @IBOutlet var spinner: Spinner!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,10 +35,12 @@ class CUViewController: NSViewController {
         let url = urlTextField.stringValue
         let method = CURequestMethod(rawValue: methodComboBox.indexOfSelectedItem)!
         let parameters = parametersTableView.getParameters()
+        loadingMode(on: true)
         CURequest.request(url,
             method: method,
             parameters: parameters,
             success: { output in
+                self.loadingMode(on: false)
                 let outputParameters = CUOutputParameters(
                     url: url, 
                     output: output)
@@ -47,5 +54,10 @@ class CUViewController: NSViewController {
             let outputParameters = sender as! CUOutputParameters
             outputViewController.outputParameters = outputParameters
         }
+    }
+
+    private func loadingMode(on on: Bool) {
+        buttonContainer.hidden = on
+        spinner.hidden = !on
     }
 }
