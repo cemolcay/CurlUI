@@ -58,6 +58,6 @@ class CUViewController: NSViewController {
     private func loadingMode(on on: Bool) {
         buttonContainer.hidden = on
         spinner.hidden = !on
-        spinner.startAnimating()
+        spinner.animate = on
     }
 }

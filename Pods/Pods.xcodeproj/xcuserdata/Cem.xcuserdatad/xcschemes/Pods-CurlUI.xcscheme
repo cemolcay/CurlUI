@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '09DA4C46D49DD444F4167C6B'
+               BlueprintIdentifier = 'A086B02DA803974686B052A2'
                BlueprintName = 'Pods-CurlUI'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_CurlUI.framework'>
