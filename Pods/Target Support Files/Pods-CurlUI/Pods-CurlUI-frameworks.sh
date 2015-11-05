@@ -85,9 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-CurlUI/Alamofire.framework"
+  install_framework "Pods-CurlUI/ProgressKit.framework"
   install_framework "Pods-CurlUI/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-CurlUI/Alamofire.framework"
+  install_framework "Pods-CurlUI/ProgressKit.framework"
   install_framework "Pods-CurlUI/SwiftyJSON.framework"
 fi

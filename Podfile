@@ -6,6 +6,7 @@ use_frameworks!
 target 'CurlUI' do
 pod 'Alamofire'
 pod 'SwiftyJSON'
+pod 'ProgressKit'
 end
 
 target 'CurlUITests' do

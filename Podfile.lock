@@ -1,13 +1,16 @@
 PODS:
-  - Alamofire (3.1.0)
+  - Alamofire (3.1.1)
+  - ProgressKit (0.4.1)
   - SwiftyJSON (2.3.1)
 
 DEPENDENCIES:
   - Alamofire
+  - ProgressKit
   - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 415bd7f56197722978759078486689f7ef913dce
+  Alamofire: 9b0a7188b961a03914a99304488bd226b0e46c0e
+  ProgressKit: d42fd5b9b78a4ff914e9672fb2b76f570f9da47e
   SwiftyJSON: 592b53bee5ef3dd9b3bebc6b9cb7ee35426ae8c3
 
 COCOAPODS: 0.39.0
